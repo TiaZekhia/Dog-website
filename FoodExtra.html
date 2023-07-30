@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="FoodExtraStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><!--font text-->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css"> <!--font awesome 4 cdn-->
+<script src="https://kit.fontawesome.com/fef8821bdd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="info">
+        <nav>
+            <a href="HomePage.html"><img src="images/logo-1.png"></a>
+            <div class="nav-links" id="navLinks">
+               <i class="fa fa-times" onclick="hideMenu()"></i>
+               <ul>
+                  <li><a id="home" href="HomePage.html"><strong>HOME</strong></a></li>
+                <li><a href="HomePage.html#services"><strong>SERVICES</strong></a></li>
+                <li><a href="HomePage.html#About"><strong>ABOUT</strong></a></li>
+                <li><a href="Gallery.html"><strong>GALLERY</strong></a></li>
+                <li><a href="HomePage.html#feedback"><strong>FEEDBACK</strong></a></li>
+               </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+         </nav>
+        <h1>What characteristics should all good dog food possess?</h1>
+        <div class="food-link">
+            <img src="images/dryfood.png">
+         </div>
+    </section>
+    <footer>
+         
+      <div class="footer-top">
+      <div class="footer-col">
+      <h3>USEFUL LINKS</h3>
+      <a href="HomePage.html">HOME</a>
+      <a href="HomePage.html#services">SERVICES</a>
+      <a href="HomePage.html#About">ABOUT</a>
+      <a href="Gallery.html">GALLERY</a>
+      <a href="HomePage.html#feedback">FEEDBACK</a>
+      </div>
+      <div class="dogFooter">
+        <img src="images/dogFooter.png">
+      </div>
+      <div class="footer-col">
+      <h3>Contact</h3>
+      <p>71/486 441</p>
+      <p>78/957 775</p>
+      <p>POWer@gmail.com</p>
+      </div>
+      </div>
+      <div class="footer-middle">
+        <h3>NEWS LETTER</h3>
+        <form>
+        <div>
+        <input
+                      type="email"
+                      name="newsletter"
+                      id="newsletter"
+                      placeholder="exemple@gmail.com"
+                      required
+                      />
+        <input type="submit" value="Inscription" />
+        </div>
+        </form>
+        </div>
+      <div class="footer-bottom">
+      <a href="#" class="social">
+      <ion-icon name="logo-facebook"></ion-icon>
+      </a>
+      <a href="#" class="social">
+      <ion-icon name="logo-instagram"></ion-icon>
+      </a>
+      <a href="#" class="social">
+      <ion-icon name="logo-twitter"></ion-icon>
+      </a>
+      </div>
+      </footer>
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  
+    <!--toggle menu--> 
+    <script>
+        var navLinks=document.getElementById("navLinks");
+        function showMenu(){
+           navLinks.style.right="0";
+        }
+        function hideMenu(){
+           navLinks.style.right="-200px";
+        }
+       </script>
+</body>

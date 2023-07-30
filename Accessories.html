@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="GadgetStyleExtra.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><!--font text-->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css"> <!--font awesome 4 cdn-->
+<script src="https://kit.fontawesome.com/fef8821bdd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="header">
+        <div id="back">
+            <nav>
+                <a href="HomePage.html"><img src="images/logo-2.png"></a>
+                <div class="nav-links" id="navLinks">
+                   <i class="fa fa-times" onclick="hideMenu()"></i>
+                   <ul>
+                     <li><a id="home" href="HomePage.html"><strong>HOME</strong></a></li>
+                     <li><a href="HomePage.html#services"><strong>SERVICES</strong></a></li>
+                     <li><a href="HomePage.html#About"><strong>ABOUT</strong></a></li>
+                     <li><a href="Gallery.html"><strong>GALLERY</strong></a></li>
+                     <li><a href="HomePage.html#feedback"><strong>FEEDBACK</strong></a></li>
+                   </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+             </nav>
+             </div>
+    </section>
+<section class="container">
+                       <div class="toy">
+                         <img src="images/leash.png" >
+                    <div class="desc">Leash</div>
+                    <div class="shop"><a href="https://www.amazon.com/s?k=dog+leash&crid=QIFJ2AHYDBGY&sprefix=dog+lea%2Caps%2C383&ref=nb_sb_ss_ts-doa-p_2_7">SHOP NOW</a></div>
+                   </div>
+                   <div class="toy">
+                    <img src="images/clothes.png" >
+               <div class="desc">Clothes</div>
+               <div class="shop"><a href="https://www.amazon.com/s?k=dog+clothes&crid=2FX2046L8KF0T&sprefix=dog+clothe%2Caps%2C391&ref=nb_sb_noss_2">SHOP NOW</a></div>
+              </div>
+              <div class="toy">
+                <img src="images/waterproof1.png" >
+           <div class="desc">Waterproof Suit</div>
+           <div class="shop"><a href="https://www.amazon.com/s?k=full+body+waterproof+suit+dog&crid=35LVH47V5KOBN&sprefix=%2Caps%2C383&ref=nb_sb_ss_recent_3_0_recent">SHOP NOW</a></div>
+          </div>
+              <div class="toy">
+                <img src="images/plate.png" >
+           <div class="desc">Food Bowl</div>
+           <div class="shop"><a href="https://www.amazon.com/s?k=dog+plates+for+food&crid=1E91AJIHAOBRS&sprefix=dog+plate%2Caps%2C402&ref=nb_sb_ss_ts-doa-p_2_9">SHOP NOW</a></div>
+          </div>
+                    <div class="toy">
+                   <img src="images/protective collar.png">
+                      <div class="desc">Protective Collar</div>
+                      <div class="shop"><a href="https://www.amazon.com/s?k=dog+protective+collar&crid=32REG1B7DP7N1&sprefix=dog+prot%2Caps%2C695&ref=nb_sb_ss_ts-doa-p_3_8">SHOP NOW</a></div>
+                </div>
+                    <div class="toy">
+                   <img src="images/plastic muzzle.png" >
+                      <div class="desc">Plastic Muzzle</div>
+                      <div class="shop"><a href="https://www.amazon.com/s?k=dog+plastic+muzzle&crid=1MET9YNTZOUY&sprefix=dog+plastic+mu%2Caps%2C330&ref=nb_sb_ss_ts-doa-p_1_14">SHOP NOW</a></div>
+                    </div>
+              
+</section>
+<footer>
+         
+   <div class="footer-top">
+   <div class="footer-col">
+   <h3>USEFUL LINKS</h3>
+   <a href="HomePage.html">HOME</a>
+   <a href="HomePage.html#services">SERVICES</a>
+   <a href="HomePage.html#About">ABOUT</a>
+   <a href="Gallery.html">GALLERY</a>
+   <a href="HomePage.html#feedback">FEEDBACK</a>
+   </div>
+   <div class="dogFooter">
+     <img src="images/dogFooter.png">
+   </div>
+   <div class="footer-col">
+   <h3>Contact</h3>
+   <p>71/486 441</p>
+   <p>78/957 775</p>
+   <p>POWer@gmail.com</p>
+   </div>
+   </div>
+   <div class="footer-middle">
+     <h3>NEWS LETTER</h3>
+     <form>
+     <div>
+     <input
+                   type="email"
+                   name="newsletter"
+                   id="newsletter"
+                   placeholder="exemple@gmail.com"
+                   required
+                   />
+     <input type="submit" value="Inscription" />
+     </div>
+     </form>
+     </div>
+   <div class="footer-bottom">
+   <a href="#" class="social">
+   <ion-icon name="logo-facebook"></ion-icon>
+   </a>
+   <a href="#" class="social">
+   <ion-icon name="logo-instagram"></ion-icon>
+   </a>
+   <a href="#" class="social">
+   <ion-icon name="logo-twitter"></ion-icon>
+   </a>
+   </div>
+   </footer>
+ </section>
+ <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+     
+<!--toggle menu--> 
+<script>
+    var navLinks=document.getElementById("navLinks");
+    function showMenu(){
+       navLinks.style.right="0";
+    }
+    function hideMenu(){
+       navLinks.style.right="-200px";
+    }
+   </script>
+</body>
+</html>

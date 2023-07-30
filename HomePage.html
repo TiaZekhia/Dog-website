@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dogs Website</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com"><!--font text-->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css"> <!--font awesome 4 cdn-->
+<script src="https://kit.fontawesome.com/fef8821bdd.js" crossorigin="anonymous"></script>
+
+</head>
+     <body>
+        <section class="header">
+         <nav>
+            <a href="HomePage.html"><img src="images/logo-1.png"></a>
+            <div class="nav-links" id="navLinks">
+               <i class="fa fa-times" onclick="hideMenu()"></i>
+               <ul>
+                  <li><a id="home" href="HomePage.html"><strong>HOME</strong></a></li>
+                  <li><a href="#services"><strong>SERVICES</strong></a></li>
+                  <li><a href="#About"><strong>ABOUT</strong></a></li>
+                  <li><a href="Gallery.html"><strong>GALLERY</strong></a></li>
+                  <li><a href="#feedback"><strong>FEEDBACK</strong></a></li>
+               </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+         </nav>
+         <div class="text-box">
+            <h1>GET YOUR <span>PET</span> AND WE WILL DO THE <span>REST</span></h1>
+         </div>
+        </section>
+
+
+        <section id="services">
+         <div class="options">
+          <h1 id="header1">SERVICES</h1>
+         <a href="BreedsPage.html">POPULAR BREEDS <img src="images/breeds.png"></a>
+         <a href="GadgetsPage.html">DOG GADGETS<img src="images/belt (2).png"></a>
+         <a href="FoodPage.html">DOG FOOD<img src="images/dog food.png"></a>
+         </div>
+        </section>
+
+        <section id="About">
+         <h1>About Us</h1>
+         <p>‘POW-ER’
+
+            Heaven for all dogs and dog proprietors - ‘POW-ER’ is a place that is devoted to giving you and your four-legged companions with the best items, care and life that we can.
+            <br>Like you, we realize that your dog is an immense piece of the family. They offer such a great amount to our lives – interminable fun, grins and unrestricted love.
+            
+            <br>Our company offers a definitive dog shopping knowledge. You’ll discover more about your dog's characteristics and their needs.
+            
+           <br> You can buy online the greater part of all dogs needs.</p>
+        </section>
+
+        <div id="feedback">Feedback</div>
+        <section class="container">
+         <div class="feedbackbox">
+            <div class="emoji">
+               <div id="emoji">
+               <img src="images/Feedback/poor.png">
+               <img src="images/Feedback/bad.png">
+               <img src="images/Feedback/okay.png">
+               <img src="images/Feedback/good.png">
+               <img src="images/Feedback/excellent.png">
+            </div>
+            </div>
+            <div class="rating">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+            </div>
+         </div>
+        </section>
+<section>
+        <footer>
+         
+          <div class="footer-top">
+          <div class="footer-col">
+          <h3>USEFUL LINKS</h3>
+          <a href="HomePage.html">HOME</a>
+          <a href="#services">SERVICES</a>
+          <a href="#About">ABOUT</a>
+          <a href="Gallery.html">GALLERY</a>
+          <a href="#feedback">FEEDBACK</a>
+          </div>
+          <div class="dogFooter">
+            <img src="images/dogFooter.png">
+          </div>
+          <div class="footer-col">
+          <h3>Contact</h3>
+          <p>71/486 441</p>
+          <p>78/957 775</p>
+          <p>POWer@gmail.com</p>
+          </div>
+          </div>
+          <div class="footer-middle">
+            <h3>NEWS LETTER</h3>
+            <form>
+            <div>
+            <input
+                          type="email"
+                          name="newsletter"
+                          id="newsletter"
+                          placeholder="exemple@gmail.com"
+                          required
+                          />
+            <input type="submit" value="Inscription" />
+            </div>
+            </form>
+            </div>
+          <div class="footer-bottom">
+          <a href="#" class="social">
+          <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+          <a href="#" class="social">
+          <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+          <a href="#" class="social">
+          <ion-icon name="logo-twitter"></ion-icon>
+          </a>
+          </div>
+          </footer>
+        </section>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+          <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+<!-- End of .container -->
+
+<!--toggle menu--> 
+        <script>
+         var navLinks=document.getElementById("navLinks");
+         function showMenu(){
+            navLinks.style.right="0";
+         }
+         function hideMenu(){
+            navLinks.style.right="-200px";
+         }
+        </script>
+
+<!--feedback-->
+<script>
+var stars=document.getElementsByClassName("fas");
+var emoji =document.getElementById("emoji");
+
+stars[0].onclick=function(){
+   stars[0].style.color="#ffd93b";
+   stars[1].style.color="#e4e4e4";
+   stars[2].style.color="#e4e4e4";
+   stars[3].style.color="#e4e4e4";
+   stars[4].style.color="#e4e4e4";
+   emoji.style.transform="translateX(0)";
+}
+stars[1].onclick=function(){
+   stars[0].style.color="#ffd93b";
+   stars[1].style.color="#ffd93b";
+   stars[2].style.color="#e4e4e4";
+   stars[3].style.color="#e4e4e4";
+   stars[4].style.color="#e4e4e4";
+   emoji.style.transform="translateX(-100px)";
+}
+stars[2].onclick=function(){
+   stars[0].style.color="#ffd93b";
+   stars[1].style.color="#ffd93b";
+   stars[2].style.color="#ffd93b";
+   stars[3].style.color="#e4e4e4";
+   stars[4].style.color="#e4e4e4";
+   emoji.style.transform="translateX(-200px)";
+}
+stars[3].onclick=function(){
+   stars[0].style.color="#ffd93b";
+   stars[1].style.color="#ffd93b";
+   stars[2].style.color="#ffd93b";
+   stars[3].style.color="#ffd93b";
+   stars[4].style.color="#e4e4e4";
+   emoji.style.transform="translateX(-300px)";
+}
+stars[4].onclick=function(){
+   stars[0].style.color="#ffd93b";
+   stars[1].style.color="#ffd93b";
+   stars[2].style.color="#ffd93b";
+   stars[3].style.color="#ffd93b";
+   stars[4].style.color="#ffd93b";
+   emoji.style.transform="translateX(-400px)";
+}
+</script>
+     </body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gadgets</title>
+    <link rel="stylesheet" href="GadgetStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><!--font text-->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css"> <!--font awesome 4 cdn-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"><!--carousel-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/fef8821bdd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section id="HeaderGadget">
+        <div class="back">
+        <nav>
+            <a href="HomePage.html"><img src="images/logo-2.png"></a>
+            <div class="nav-links" id="navLinks">
+               <i class="fa fa-times" onclick="hideMenu()"></i>
+               <ul>
+                <li><a id="home" href="HomePage.html"><strong>HOME</strong></a></li>
+                <li><a href="HomePage.html#services"><strong>SERVICES</strong></a></li>
+                <li><a href="HomePage.html#About"><strong>ABOUT</strong></a></li>
+                <li><a href="Gallery.html"><strong>GALLERY</strong></a></li>
+                <li><a href="HomePage.html#feedback"><strong>FEEDBACK</strong></a></li>
+               </ul>
+            </div>
+            <i id="burger" class="fa fa-bars" onclick="showMenu()"></i>
+         </nav>
+        </div>
+    </section>
+        <section class="carousel">
+            <h2>Click on your desired category!</h2>
+        <div class="container">  
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="item active">
+                  <a href="Toys.html"><img src="images/toys.png"  ></a>
+                </div>
+          
+                <div class="item">
+                  <a href="Higeen.html"><img src="images/higeen.png" ></a>
+                </div>
+              
+                <div class="item">
+                  <a href="Accessories.html"><img src="images/accessories.png"  ></a>
+                </div>
+                <div class="item">
+                    <a href="House.html"><img src="images/house.png" ></a>
+                  </div>
+              </div>
+          
+              <!-- Left and right controls -->
+              <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+        </div>
+      </section>
+      <footer>
+        <div class="footer-top">
+        <div class="footer-col">
+        <h3>USEFUL LINKS</h3>
+        <a href="HomePage.html">HOME</a>
+        <a id="" href="HomePage.html#services">SERVICES</a>
+        <a href="HomePage.html#About">ABOUT</a>
+        <a href="Gallery.html">GALLERY</a>
+        <a href="HomePage.html#feedback">FEEDBACK</a>
+        </div>
+        <div class="dogFooter">
+          <img src="images/dogFooter.png">
+        </div>
+        <div class="footer-col">
+        <h3>Contact</h3>
+        <p>71/486 441</p>
+        <p>78/957 775</p>
+        <p>POWer@gmail.com</p>
+        </div>
+        </div>
+        <div class="footer-middle">
+          <h3>NEWS LETTER</h3>
+          <form>
+          <div>
+          <input
+                        type="email"
+                        name="newsletter"
+                        id="newsletter"
+                        placeholder="exemple@gmail.com"
+                        required
+                        />
+          <input id="inscription" type="submit" value="Inscription" />
+          </div>
+          </form>
+          </div>
+        <div class="footer-bottom">
+        <a href="#" class="social">
+        <ion-icon name="logo-facebook"></ion-icon>
+        </a>
+        <a href="#" class="social">
+        <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+        <a href="#" class="social">
+        <ion-icon name="logo-twitter"></ion-icon>
+        </a>
+        </div>
+        </footer>
+      </section>
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+<!--toggle menu--> 
+<script>
+  var navLinks=document.getElementById("navLinks");
+  function showMenu(){
+     navLinks.style.right="0";
+  }
+  function hideMenu(){
+     navLinks.style.right="-200px";
+  }
+ </script>
+    
+</body>

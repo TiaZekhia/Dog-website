@@ -1,0 +1,406 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+.header{
+    height: 130vh;
+    width: 100%;
+    background-image:url(images/dog2.webp);
+    background-blend-mode: multiply;/*defines the blending mode of each background layer (color and/or image).*/
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;/*give the container the ability to alter its items' width/height (and order) to best fill the available space*/
+    padding: 0% 6%;
+    justify-content: space-between;/*defines how the browser distributes space between and around content items along the main-axis of a flex container, and the inline axis of a grid container.*/
+    align-items: center;
+}
+nav img{
+    width: 150px;
+}
+.nav-links{
+    flex: 1;/*the size of all of the other elements will have the same width as their content, but the element with flex: 1 will have the remaining full space given to it*/
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color:white;
+    text-decoration: none;
+    font-size: 18px;
+}
+.nav-links ul li::after{/*the element after*/
+    content: '';/*replaces an element with a generated value*/
+    width: 0%;
+    height: 2px;
+    background: #f9af50;
+    display: block;
+    margin: auto;
+    transition: 0.2s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+/*.nav-links ul li:active{
+background-color: red;
+}*/
+.text-box{
+  color:white;
+  position: absolute;
+  top: 18%;
+  left: 38%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+.text-box span{
+  font-weight: lighter;
+  font-size: 30pt;
+}
+nav .fa{ /*to these icons be hidden for large screens*/
+    display: none;
+}
+
+
+/*-----services-----*/
+#services{
+    width: 100%;
+    margin: auto;
+    background-color:#212121;
+    
+}
+#services .options a{
+    display: inline-block;
+    text-decoration: none;
+    color: #f9af50;
+    border: 1px solid #f9af50;
+    padding: 12px 34px;
+    font-size: 18px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+#services .options img{
+    width: 120px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#services .options{
+    text-align: center;
+}
+#services .options a:hover{
+    border: 1px solid white;
+    background: white;
+    color: black;
+    border: 2px solid black ;
+    transition: 0.6s;
+}
+#header1{
+    padding-top: 30px;
+    color: white;
+    font-size: 30px;
+}
+
+#About{
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+#About p{
+margin: 15px;
+padding: 15px;
+}
+#feedback{
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  background: rgb(109, 106, 106);
+}
+.container{
+  width: 100%;
+  height: 100%;
+  background: rgb(109, 106, 106);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.feedbackbox{
+  background: #fff;
+  padding: 50px 100px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.emoji{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+.emoji img{
+  width: 80px;
+  margin: 0 10px;
+}
+
+#emoji{
+  display: flex;
+  align-items: center;
+  transform: translateX(-400px);
+  transition: 0.3s;
+}
+
+.rating .fas{
+  font-size: 40px;
+  color: #e4e4e4;
+  cursor: pointer;
+}
+
+.dogFooter img{
+    background-color: transparent;
+    width: 200px;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.2s ease;
+}
+
+ 
+
+a:hover {
+  color: #f9af50;
+}
+
+ 
+
+main {
+  margin: 20vh auto;
+  text-align: center;
+}
+
+ 
+
+main h1 {
+  font-size: 60px;
+}
+
+ 
+
+footer {
+  background-color: #212121;
+  color: #dfdfdf;
+  padding: 30px 100px;
+}
+
+ 
+
+footer h3 {
+  color: white;
+}
+
+ 
+
+.footer-top {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 50px;
+  justify-items: center;
+  max-width: 900px;
+  margin: 0 auto 80px auto;
+}
+
+ 
+
+.footer-col {
+  width: max-content;
+}
+
+ 
+
+.footer-col > * {
+  display: block;
+  width: max-content;
+}
+
+ 
+
+.footer-col > h3 {
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+ 
+
+.footer-col a {
+  padding: 5px 0;
+}
+
+ 
+
+.footer-middle {
+  width: 100%;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+ 
+
+.footer-middle h3 {
+  margin-bottom: 10px;
+}
+
+ 
+
+.footer-middle label {
+  display: block;
+  margin-bottom: 10px;
+  overflow-wrap: break-word;
+}
+
+ 
+
+input {
+  padding: 10px;
+  border-radius: 3px;
+}
+
+ 
+
+input[type="submit"] {
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+ 
+
+input[type="submit"]:hover {
+  color: black;
+  background-color: #f9af50;
+}
+
+ 
+
+.footer-bottom {
+  display: flex;
+  justify-content: center;
+}
+
+ 
+
+a.social {
+  display: block;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+ 
+
+a.social:hover {
+  background-color: #f9af50;
+}
+
+ 
+
+a.social:not(:last-child) {
+  margin-right: 10px;
+}
+
+ 
+
+@media screen and (max-width: 900px) {
+  .footer-top {
+    justify-items: start;
+  }
+}
+
+@media(max-width:700px) { /*for navigation bar*/
+  .nav-links ul li{
+      display: block;
+  }
+  .nav-links{
+      position: absolute;
+      background: #f9af50;
+      height: 100%;
+      width: 200px;
+      top: 0;
+      right: -200px;
+      text-align: left;
+      transition: 1s;
+      z-index: 1;
+  }
+  nav .fa{
+      display: block;
+      color: white;
+      margin: 10px;
+      font-size: 22px;
+      cursor: pointer;
+  }
+  .nav-links ul{
+      padding: 30px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  body{
+    overflow-x: hidden;
+}
+.header{
+  background-image: none;
+  background-color: #212121;
+  height: 60vh;
+}
+.text-box{
+  font-size: 20px;
+  text-align: center;
+  margin-top: 35%;
+  margin-left: 15%;
+  width: 50%;
+}
+.options a{
+  display:block;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+  footer {
+    padding: 30px;
+  }
+
+ 
+
+  .footer-middle {
+    text-align: left;
+  }
+
+
+}

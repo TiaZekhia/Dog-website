@@ -1,0 +1,391 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;/*give the container the ability to alter its items' width/height (and order) to best fill the available space*/
+    padding: 0% 6%;
+    justify-content: space-between;/*defines how the browser distributes space between and around content items along the main-axis of a flex container, and the inline axis of a grid container.*/
+    align-items: center;
+}
+nav img{
+    width: 150px;
+}
+.nav-links{
+    flex: 1;/*the size of all of the other elements will have the same width as their content, but the element with flex: 1 will have the remaining full space given to it*/
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color:black;
+    text-decoration: none;
+    font-size: 18px;
+}
+.nav-links ul li::after{/*the element after*/
+    content: '';/*replaces an element with a generated value*/
+    width: 0%;
+    height: 2px;
+    background: black;
+    display: block;
+    margin: auto;
+    transition: 0.2s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+#back{
+    height: 110vh;
+    background-image: url(images/pow5.png);
+}
+#HappyDog{
+    width: 500px;
+    height: 500px;
+    display: block;
+    margin-left: 20%;
+    margin-right: auto;
+}
+#FoodBrands{
+    background-color: #ffe9b8;
+    flex: 1;
+    border: 2px solid black;
+    width: 100%;
+}
+#FoodBrands h1{
+    text-align: center;
+    margin: 15px;
+}
+#FoodBrands ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    width: 17%;
+    text-align: center;
+    margin-left: 20px;
+}
+#FoodBrands ul li img{
+    width: 100%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    /*mix-blend-mode: color-burn;*/
+}
+#FoodBrands h1{
+    color: black;
+}
+
+.container{
+    background-color:  #ffe9b8;
+    margin: auto;
+    overflow: auto;
+}
+.container h1{
+    text-align: center;
+    color: black;
+    margin-bottom: 15px;
+}
+.dog{
+    margin: 5px;
+    border: 1px solid;
+    float: left;
+    width: 32.4%;
+
+}
+.dog img{
+    display: inline;
+    width: 100%;
+    height: auto;
+}
+.desc{
+    color: black;
+    text-align: center;
+}
+.shop{
+    border: 1px solid black;
+    background-color: yellow;
+    width: 50%;
+    text-align: center;
+    margin-left: 25%;
+    padding: 15px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.shop a{
+    text-decoration: none;
+    color: black;
+}
+.shop:hover{
+    background-color: #007cd6;
+}
+
+.icon{
+    width: 50px;
+    height: 50px;
+    float: right;
+}
+
+nav .fa{ /*to these icons be hidden for large screens*/
+    display: none;
+}
+@media(max-width:700px) {
+  #burger{
+    margin-right: 15%;
+    color: black;
+  }
+  #click{
+    color: white;
+  }
+  #HappyDog{
+    position: relative;
+    right: 80px;
+  }
+    .nav-links ul li{
+        display: block;
+    }
+     .nav-links ul li a{
+        color: white;
+    }
+    .nav-links{
+      position: absolute;
+      background:#212121;
+      height: 400px;
+      width: 200px;
+      top: 0;
+      right: -200px;
+      text-align: left;
+      transition: 1s;
+  }
+    nav .fa{
+        display: block;
+        color: black;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+    #FoodBrands{
+     position: relative;
+     top:-200px;
+  }
+  #FoodBrands ul li{
+    font-size: 25px;
+  }
+  #FoodBrands ul li{
+    width: 45%;
+}
+  .container{
+    position: relative;
+    top:-400px;
+  }
+  footer{
+    position: relative;
+    top:-400px;
+  }
+  .desc{
+    font-size: 25px;
+  }
+  .shop a{
+    font-size: 25px;
+  }
+  .container h1{
+    display: block;
+    font-size: 25px;
+}
+.dog{
+  width: 90%;
+  margin: 5%;
+
+}
+}
+.dogFooter img{
+    background-color: transparent;
+    width: 200px;
+}
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.2s ease;
+}
+
+ 
+
+a:hover {
+  color: #f9af50;
+}
+
+ 
+
+main {
+  margin: 20vh auto;
+  text-align: center;
+}
+
+ 
+
+main h1 {
+  font-size: 60px;
+}
+
+ 
+
+footer {
+  background-color: #212121;
+  color: #dfdfdf;
+  padding: 30px 100px;
+}
+
+ 
+
+footer h3 {
+  color: white;
+}
+
+ 
+
+.footer-top {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 50px;
+  justify-items: center;
+  max-width: 900px;
+  margin: 0 auto 80px auto;
+}
+
+ 
+
+.footer-col {
+  width: max-content;
+}
+
+ 
+
+.footer-col > * {
+  display: block;
+  width: max-content;
+}
+
+ 
+
+.footer-col > h3 {
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+ 
+
+.footer-col a {
+  padding: 5px 0;
+}
+
+ 
+
+.footer-middle {
+  width: 100%;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+ 
+
+.footer-middle h3 {
+  margin-bottom: 10px;
+}
+
+ 
+
+.footer-middle label {
+  display: block;
+  margin-bottom: 10px;
+  overflow-wrap: break-word;
+}
+
+ 
+
+input {
+  padding: 10px;
+  border-radius: 3px;
+}
+
+ 
+
+input[type="submit"] {
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+ 
+
+input[type="submit"]:hover {
+  color: black;
+  background-color: #f9af50;
+}
+
+ 
+
+.footer-bottom {
+  display: flex;
+  justify-content: center;
+}
+
+ 
+
+a.social {
+  display: block;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+ 
+
+a.social:hover {
+  background-color: #f9af50;
+}
+
+ 
+
+a.social:not(:last-child) {
+  margin-right: 10px;
+}
+
+ 
+
+@media screen and (max-width: 900px) {
+  .footer-top {
+    justify-items: start;
+  }
+}
+
+@media screen and (max-width: 700px) {
+
+  footer {
+    padding: 30px;
+  }
+
+ 
+
+  .footer-middle {
+    text-align: left;
+  }
+
+
+}
